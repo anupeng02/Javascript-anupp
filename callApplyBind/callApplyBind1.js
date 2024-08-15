@@ -19,4 +19,6 @@ let userDetails2 ={
     
 }
 
+// function Borrowing
+
 printDetails.call(userDetails2);
