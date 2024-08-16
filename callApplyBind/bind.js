@@ -9,7 +9,8 @@ let userDetails ={
     // console.log(this.designation)
 }
 
-printDetails.apply(userDetails, ["uttar pradesh", "varanasi"])
+ let output1 = printDetails.bind(userDetails, "uttar Pradesh","varanasi")
+ output1();
 
 
 let userDetails2 ={
@@ -19,7 +20,7 @@ let userDetails2 ={
     
 }
 
-printDetails.apply(userDetails2, ["Karnataka", "Bangalore"] );
+let output = printDetails.bind(userDetails2, "Karnataka", "Bangalore" );
+output();
 
-// there is only one difference in call and apply ie we can pass array as an argument 
-// instead of passing individual values , we can pass arraylist as an argument incase of apply
+// bind function says : we can create a copy of function and we can inovoke it later when we need.
