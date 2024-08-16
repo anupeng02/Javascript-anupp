@@ -36,7 +36,14 @@ console.log(sum)
 
 // console.log(findMax(arr))
 
-let 
+let maxValue = arr.reduce((acc, curr)=>{
+    if(curr> acc){
+        acc = curr
+    }
+    return acc
+}, 0)
+
+console.log(maxValue)
 
 
 
